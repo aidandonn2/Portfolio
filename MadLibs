@@ -1,0 +1,27 @@
+#Aidan Williams
+#12/10/24
+
+#Initizilation
+
+#Funcs
+def bold_text(text): #Bolds the text
+    bold_start= '\033[1m'
+    bold_end= '\033[0m'
+    return bold_start + text + bold_end
+def inputs():
+    Adjective = input("Please enter a Adjective: ") #The user inputs words here so they can create a story
+    Adjective.upper() #It makes the first letter in uppercase
+    Clothes = input("Please enter Clothes: ")
+    Clothes.upper()
+    Location = input("Please enter a Location: ")
+    Location.upper()
+    Animal = input("Please enter an Animal: ")
+    Animal.upper()
+    Vehicle = input("Please enter a type of vehicle: ")
+    Vehicle.upper()
+    print("Little " + bold_text(Adjective) +  bold_text(Clothes) + " wanted to go to her Grandmother’s house. To get there, she had to walk through the scary " + bold_text(Location) + " On the way there, a Big Bad " + bold_text(Animal) + " tried to catch her, but she got away. So the Big Bad " + bold_text(Animal) + " went to Grandmother’s house instead, ate her, then put on her clothes, then got into her" + bold_text(Vehicle))
+
+#Main
+inputs()
+
+#Main
