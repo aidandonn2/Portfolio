@@ -1,0 +1,46 @@
+#SimpleCalculator
+#Initilization
+#function
+def mult(num1, num2): #Defines the multiplying code
+    result = num1 * num2
+    print("The result is: "+str(result))
+def div(num1, num2): #Defines the division code
+    result = num1/num2
+    print("The result is: "+str(result))
+def sub(num1, num2): # Defines the subtraction code
+    result = num1 - num2
+    print("The result is: "+str(result))
+def add(num1, num2): # Defines the addition code
+    result = num1 + num2
+    print("The result is: "+str(result))
+def simpleCalc(): #This is the main function
+    print("Welcome Preschoolers to Simple Calculator")
+    while True:
+        print("Please choose an operation: ")
+        print("""1. Addition
+        2. Subtraction
+        3. Multiplication
+        4. Division
+        5. Quit""")
+        operation = int(input("(1-5) :"))
+        if operation == 1:
+            add1=int(input("Enter the first number: "))
+            add2=int(input("Enter the second number: "))
+            add(add1,add2)
+        if operation == 2:
+            sub1 = int(input("Enter the first number: "))
+            sub2=int(input("Enter the second number: "))
+            sub(sub1,sub2)
+        if operation == 3:
+            mult1 = int(input("Enter the first number: "))
+            mult2=int(input("Enter the second number: "))
+            mult(mult1,mult2)
+        if operation == 4:
+            div1 = int(input("Enter the first number: "))
+            div2=int(input("Enter the second number: "))
+            div(div1,div2)
+        if operation == 5:
+            print("Okay! Have a nice day!")
+            break
+#main
+simpleCalc()
