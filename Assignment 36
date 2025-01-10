@@ -1,1 +1,35 @@
+print("Welcome to your favorite foods!") # Welcoming sentence
+print("Answer the following quesions to see what is your favorite food!") # Intro question
+ans = input("Unhealthy or Healthy ?") # First question answer
+if ans == "Unhealthy":  # First set of answers
+    ans = input("Snacks or Food ?")
+    if ans == "Snacks":
+        ans = input("Crunchy or Soft ?")
+        if ans == "Crunchy":
+            print("Your favorite food is potato chips!")
+        else:
+            print("Your favorite food is gummies!") # Second set of answers
+
+if ans == "Food":  #Second question answer
+    ans = input("Singular or Multiple?") # First set of answers
+    if ans == "Singular":
+        print("Your favorite food is Burgers!")
+    else:
+        print("Your favorite food is gummies!") #Second set of answers
+
+if ans == "Healthy": # First set of answers
+    ans = input("Meals or Fruits ?")
+    if ans == "Meals":
+        ans = input("Cold or Warm ?")
+        if ans == "Cold":
+            print("Your favorite food is Salads!")
+        else:
+            print("Your favorite food is fish!") # Second set
+
+if ans == "Fruits": #Last set of answers
+    ans = input("Crunchy or Soft ?")
+    if ans == "Crunchy":
+            print("Your favorite food is Apples!")
+    else:
+            print("Your favorite food is Bananas!")
 
