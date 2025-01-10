@@ -1,0 +1,72 @@
+#Aidan Williams
+#11/21
+#Pokemon Evolution
+
+#Initialize
+import random
+#Global Variables
+pokemon_level = 0
+pokemon_name = "charmander"
+day = 1
+#Functions
+def train(): #This function creates a training game for you to train your pokemon for XP
+        global pokemon_level
+        global day
+        pokemon_level = pokemon_level + 1
+        print("Your Pokemon's level has increased! The Pokemon level is now: " + str(pokemon_level))
+
+        day = day + 1
+
+def gymbattle(): # This function creates a gym battle between two pokemons so you can gain XP
+        global pokemon_level
+        global day
+        print("Your Pokemon is in a battle!! Fight to level him up!")
+        outcome = random.randint(1,2)
+        if outcome == 1:
+                pokemon_level = pokemon_level + 1
+                print("Your Pokemon won!! Your Pokemon's level has increased! The Pokemon level is now: " + str(pokemon_level))
+
+
+
+        else:
+                print("You lost!")
+        day = day + 1
+
+def rest(): # This function creates a time for your pokemon to rest and the day continues to go on
+        global day
+        global pokemon_level
+        day = day + 1
+        print("Your current Pokemon level is: " + str(pokemon_level))
+def evolve(): #This function evolves your pokemon
+        global pokemon_level
+        global pokemon_name
+        day = day + 1
+        if pokemon_level >= 13:
+                pokemon_name = "charmeleon"
+        else:
+                print("You can't evolve yet!")
+
+
+
+
+
+
+#main
+while True:
+        print("Wecome to Pokemon Evolution")
+        print("Choose an activity for Day: " + str(day))
+        print("""1.Train
+        2.Gym Battle
+        3.Rest(Display Info)
+        4.Quit
+        """)
+        activity = int(input("Activity for the day: "))
+        if activity == 1:
+                train()
+        elif activity ==2:
+                gymbattle()
+        elif activity ==3:
+                rest()
+        elif activity ==4:
+                print("Thank you for playing!")
+                break
