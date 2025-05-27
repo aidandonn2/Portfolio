@@ -16,3 +16,6 @@ This project allows the user to use their own calculator. It is just a simple ca
 
 5. Rock Paper Scissors
 This projects allows the user to play Rock Paper Scissors with the computer. They will either pick Rock, Paper or Scissors to try and beat the computer in this fun game.
+
+6. Big Proj 4
+   This project is a fun game that ask the user a series of questions. The user will receive their favorite animal based off of the answers they provide.
