@@ -1,23 +1,23 @@
 import time
 import random
-FlyingLong = ["albatross", "crane", "flamingo", "pelican", "crane fly", "dragonfly", "jacana", "ibex", "bat", "flying squirrel"]
+FlyingLong = ["albatross", "crane", "flamingo", "pelican", "crane fly", "dragonfly", "jacana", "ibex", "bat", "flying squirrel"] # Set of animals
 
-FlyingShort = ["Hummingbird", "Bumblebee", "Swallow ", "Dragonfly ", "Finch", "Chickadee", "Moth", "Kingfisher", "Nighthawk", "Pipistrelle Bat"]
+FlyingShort = ["Hummingbird", "Bumblebee", "Swallow ", "Dragonfly ", "Finch", "Chickadee", "Moth", "Kingfisher", "Nighthawk", "Pipistrelle Bat"] # Set of animals
 
-NonLong = ["Giraffe", "Camel", "Ostrich", "Gazelle", "Horse ", "Kangaroo", "Elephant", "Moose", "Llama", "Elk"]
+NonLong = ["Giraffe", "Camel", "Ostrich", "Gazelle", "Horse ", "Kangaroo", "Elephant", "Moose", "Llama", "Elk"] # Set of animals
 
-NonShort = ["Dachshund", "Corgi", "Penguin", "Turtle", "Hedgehog", "Bulldog", "Kangaroo Rat", "Pygmy Hippo", "Chinchilla", "Warthog"]
+NonShort = ["Dachshund", "Corgi", "Penguin", "Turtle", "Hedgehog", "Bulldog", "Kangaroo Rat", "Pygmy Hippo", "Chinchilla", "Warthog"] # Set of animals
 
-sFlyingLong = ["albatros", "grulla", "flamenco", "pelícano", "típula grulla", "libélula", "jacana", "íbice", "murciélago", "ardilla voladora"]
+sFlyingLong = ["albatros", "grulla", "flamenco", "pelícano", "típula grulla", "libélula", "jacana", "íbice", "murciélago", "ardilla voladora"] # Set of animals
 
-sFlyingShort = ["Colibrí", "Abejorro", "Golondrina", "Libélula", "Pinzón", "Carbonero", "Polilla", "Martín Pescador", "Choquete", "Murciélago Pipistrelle"]
+sFlyingShort = ["Colibrí", "Abejorro", "Golondrina", "Libélula", "Pinzón", "Carbonero", "Polilla", "Martín Pescador", "Choquete", "Murciélago Pipistrelle"] # Set of animals
 
-sNonLong = ["Jirafa", "Camello", "Avestruz", "Gacela", "Caballo", "Canguro", "Elefante", "Alce", "Llama", "Venado"]
+sNonLong = ["Jirafa", "Camello", "Avestruz", "Gacela", "Caballo", "Canguro", "Elefante", "Alce", "Llama", "Venado"] # Set of animals 
 
-sNonShort = ["Perro salchicha", "Corgi", "Pingüino", "Tortuga", "Erizo", "Bulldog", "Rata canguro", "Hipopótamo pigmeo", "Chinchilla", "Facoquero"]
+sNonShort = ["Perro salchicha", "Corgi", "Pingüino", "Tortuga", "Erizo", "Bulldog", "Rata canguro", "Hipopótamo pigmeo", "Chinchilla", "Facoquero"] # Set of animals
 
 
-def tf():
+def tf(): # this is the english version of the code
         global FlyingLong
         global FlyingShort
         global NonLong
@@ -25,15 +25,15 @@ def tf():
         while True:
                 print("Welcome to your favorite animal picker!")
                 print("""
-        Please choose an option:
+        Please choose an option: 
                 A) Flying Long Leg Animal
                 B) Flying Short Leg Animal
                 C) Non Flying Long Leg Animal
                 D) Non Flying Short Leg Animal
                 E) Quit
-                                   """)
+                                   """) #Chooses which set of lists to choose from
                 user_input = str(input("(A,B,C,D,E) "))
-                if user_input.upper() == "A":
+                if user_input.upper() == "A": #If you picked A then you choose from the first list
                         for i in range(3):
                                 print("Printing..")
                                 time.sleep(2)
@@ -106,13 +106,13 @@ def tf():
                                 print("Your favorite animal is a " + random_four)
                         if four == "N":
                                 print(" ")
-                elif user_input.upper() == "E":
+                elif user_input.upper() == "E": #This is how you quit the game
                         print("Quitting...")
                         break
-                else:
+                else: #If you did not choose from A-E you will receive this message.
                         print("Invalid option. Try again.")
 
-def ff():
+def ff(): #Spanish version
         global sFlyingLong
         global sFlyongShort
         global sNonLong
@@ -206,9 +206,9 @@ def ff():
                         break
                 else:
                         print("Invalid option. Try again.")
-def thef(language):
-        if language == "English":
+def thef(language): #The actual function
+        if language == "English": #If the user picked English, then they will do the project in english
                 tf()
-        elif language == "Spanish":
+        elif language == "Spanish": #If the user picked Spanish, then they will do the project in spanish
                 ff()
-thef(input("What language do you what to do this in? English or Spanish "))
+thef(input("What language do you what to do this in? English or Spanish ")) #The parameter
