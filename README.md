@@ -19,3 +19,5 @@ This projects allows the user to play Rock Paper Scissors with the computer. The
 
 6. Big Proj 4
    This project is a fun game that ask the user a series of questions. The user will receive their favorite animal based off of the answers they provide.
+7. 37 Rock
+  This project is a rock paper scissors game versus the computer. The user will pick either rock paper or scissors and the computer will randomly pick too.
